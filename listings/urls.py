@@ -1,13 +1,9 @@
-"""
-URL configuration for listings app.
-"""
+"""Routes exposed by the listings application."""
 
 from django.urls import path
-from . import views
 
-app_name = 'listings'
+from .views import HealthCheckView
 
 urlpatterns = [
-    # Add your API endpoints here
-    # Example: path('listings/', views.ListingListView.as_view(), name='listing-list'),
+    path("health/", HealthCheckView.as_view(), name="listings-health"),
 ]
