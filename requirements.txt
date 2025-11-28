@@ -1,0 +1,28 @@
+# Django Core
+Django>=4.2,<5.0
+djangorestframework>=3.14.0
+
+# Database
+mysqlclient>=2.2.0
+
+# Environment Variables
+django-environ>=0.11.0
+
+# CORS Headers
+django-cors-headers>=4.3.0
+
+# API Documentation
+drf-yasg>=1.21.7
+
+# Celery for async tasks
+celery>=5.3.0
+redis>=5.0.0
+
+# Message Broker
+# Note: RabbitMQ is installed separately on the system
+# pip install: amqp>=5.1.1
+amqp>=5.1.1
+
+# Other useful packages
+python-decouple>=3.8
+pytz>=2023.3
